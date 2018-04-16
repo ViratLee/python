@@ -1,0 +1,33 @@
+----------- Python interpreter-------------
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import os
+>>> curdir = os.getcwd()
+>>> print(curdir)
+C:\Program Files (x86)\Python36-32
+>>> workingdir = "D:\pythonWs"
+>>> #change current/working directoy
+>>> os.chdir(workingdir)
+>>> curdir = os.getcwd()
+>>> print(curdir)
+D:\pythonWs
+>>> filelist = os.listdir()
+>>> print(filelist)
+['client.py', 'client2.py', 'file1.txt', 'HelloWorld.py', 'name.py', 'readfile.py', 'server.py', 'testmail.py', 'useful_command.txt', '__pycache__']
+>>> 
+-------------window power shell------------
+PS D:\pythonWs> python readfile.py
+this is test read file 001
+
+this is test read file 002
+
+this is test read file 003
+
+this is test read file 004
+
+this is test read file 005
+PS D:\pythonWs> D:\pythonWs
+
+---------- sublime text----
+build: Tool>Build System> Python
+run:   Tool>Build With...>Chose Python
